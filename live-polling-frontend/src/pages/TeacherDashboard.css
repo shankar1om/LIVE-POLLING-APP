@@ -1,0 +1,222 @@
+.teacher-dashboard-container {
+  max-width: 600px;
+  margin: 80px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.badge {
+  background: var(--primary-2);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+.bold {
+  font-weight: 700;
+}
+.subtitle {
+  color: var(--text-medium);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.poll-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.poll-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+.poll-form textarea {
+  width: 100%;
+  min-height: 60px;
+  border: 2px solid var(--primary-1);
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 10px 14px;
+  resize: none;
+  outline: none;
+  transition: border 0.2s;
+}
+.poll-form textarea:focus {
+  border: 2px solid var(--primary-3);
+}
+.poll-options-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.poll-options-edit input {
+  padding: 8px 12px;
+  border: 2px solid var(--primary-1);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.poll-options-edit input:focus {
+  border: 2px solid var(--primary-3);
+}
+.add-option-btn {
+  background: var(--primary-2);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 6px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  align-self: flex-start;
+}
+.poll-timer-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.poll-timer-edit label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.poll-timer-edit select {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-1);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.poll-timer-edit select:focus {
+  border: 2px solid var(--primary-3);
+}
+.ask-question-btn {
+  background: var(--primary-1);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 1;
+  transition: background 0.2s, opacity 0.2s;
+}
+.ask-question-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.poll-live {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.poll-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+  text-align: center;
+}
+.poll-options-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.poll-option-view {
+  background: var(--background);
+  border: 2px solid var(--primary-1);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.end-poll-btn {
+  background: var(--primary-2);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 1;
+  transition: background 0.2s, opacity 0.2s;
+}
+.poll-results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.result-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bar-outer {
+  flex: 1;
+  background: var(--background);
+  border-radius: 8px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.bar-inner {
+  background: var(--primary-1);
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  transition: width 0.5s;
+}
+.bar-label {
+  position: absolute;
+  right: 10px;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.history-btn {
+  background: var(--primary-3);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 6px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.history-btn:hover, .history-btn:focus {
+  background: var(--primary-1);
+} 

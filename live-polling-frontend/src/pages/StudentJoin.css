@@ -1,0 +1,75 @@
+.student-join-container {
+  max-width: 500px;
+  margin: 80px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.badge {
+  background: var(--primary-2);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+.bold {
+  font-weight: 700;
+}
+.subtitle {
+  color: var(--text-medium);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.student-join-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+}
+.student-join-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+.student-join-form input {
+  padding: 10px 14px;
+  border: 2px solid var(--primary-1);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.student-join-form input:focus {
+  border: 2px solid var(--primary-3);
+}
+.continue-btn {
+  background: var(--primary-1);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 1;
+  transition: background 0.2s, opacity 0.2s;
+}
+.continue-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+} 
